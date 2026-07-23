@@ -8,9 +8,9 @@ export const navigation = [
 
 export const metrics = [
   { value: "21", unit: "months", label: "supporting a virtual data course" },
+  { value: "1,500+", unit: "students", label: "supported in each course term" },
+  { value: "1,000", unit: "datasets", label: "checked in one grading workflow" },
   { value: "14", unit: "departments", label: "coordinated at Paradox" },
-  { value: "50+", unit: "events", label: "planned and delivered" },
-  { value: "5,000+", unit: "attendees", label: "served across the festival" },
   { value: "₹16M", unit: "budget", label: "managed with accountability" },
   { value: "5", unit: "tons", label: "of school materials distributed" },
 ];
@@ -19,27 +19,27 @@ export const roleFit = [
   {
     number: "01",
     title: "Educate students",
-    text: "Led virtual sessions and helped undergraduates work through difficult database concepts.",
+    text: "Ran live sessions and answered Discourse questions for a course serving more than 1,500 students per term.",
   },
   {
     number: "02",
     title: "Build useful materials",
-    text: "Created supporting resources and curated datasets around the questions students were actually asking.",
+    text: "Helped prepare assignments, quizzes, exams, and new question formats based on where students needed more practice.",
   },
   {
     number: "03",
     title: "Read the data",
-    text: "Reviewed assessment and submission patterns to spot where instructions and teaching needed to be clearer.",
+    text: "Used assessment and submission patterns to find unclear instructions, recurring errors, and gaps in course processes.",
   },
   {
     number: "04",
     title: "Improve digital workflows",
-    text: "Automated submission checks and course administration—experience I can carry into Moodle or Canvas badge operations.",
+    text: "Turned slow, sequential submission checks into a parallel workflow—experience that transfers to LMS and digital badge operations.",
   },
   {
     number: "05",
     title: "Guide a team",
-    text: "Coordinated student volunteers across 14 departments and translated a large plan into clear day-to-day work.",
+    text: "Coordinated a 350-person student team across 14 departments and turned a large plan into clear day-to-day work.",
   },
 ];
 
@@ -50,24 +50,24 @@ export const caseStudies = [
     eyebrow: "Teaching Assistant · IIT Madras",
     title: "Helping a virtual data course run clearly and consistently",
     intro:
-      "Business Data Management was rigorous, fully online, and busy. My role sat between the faculty team, the course systems, and students who needed quick, practical help.",
+      "For 21 months, I worked between the faculty team, the course systems, and more than 1,500 students each term. The job was part teaching, part assessment design, and part making a large online course more reliable.",
     facts: [
-      { value: "21 months", label: "Jan 2024 – Sep 2025" },
-      { value: "Virtual", label: "course delivery" },
-      { value: "Python", label: "workflow automation" },
+      { value: "1,500+", label: "students per term" },
+      { value: "1,000", label: "unique assignment datasets" },
+      { value: "Minutes", label: "evaluation time, down from hours" },
     ],
     sections: [
       {
-        title: "What students needed",
-        text: "Database ideas can become abstract quickly, especially online. I ran doubt-clearing sessions, curated practice datasets, and made supporting material that gave students another way into the subject.",
+        title: "Teaching at scale",
+        text: "I ran live doubt-clearing sessions, followed student questions on Discourse, and prepared supporting material. The goal was simple: give students a patient, practical explanation when the first one did not click.",
       },
       {
-        title: "What the teaching team needed",
-        text: "I built Python and LLM-assisted evaluation scripts to automate submission checks. That reduced repetitive grading work and made the course’s data-handling process more consistent.",
+        title: "Better ways to assess learning",
+        text: "I contributed to assignments, quizzes, and exams, and researched new question formats. Several of those formats were used in course examinations, giving the team more ways to test applied understanding.",
       },
       {
-        title: "How data shaped the work",
-        text: "Assessment and submission patterns helped us see where instructions were being misunderstood. I used those signals to adjust explanations and flag areas that needed more attention.",
+        title: "Faster, safer course operations",
+        text: "For an assignment with 1,000 unique datasets, I helped replace sequential checks with a cloud-based queue and parallel workers, bringing evaluation down from hours to minutes. I also traced a timing gap in remote-exam locking and added batch processing and verification checks so submissions closed consistently.",
       },
     ],
   },
@@ -77,24 +77,24 @@ export const caseStudies = [
     eyebrow: "Secretary & Steering Committee · Paradox, IIT Madras",
     title: "Keeping a large student festival accountable and on track",
     intro:
-      "Paradox brought together thousands of students, dozens of events, and a large operating budget. I helped turn that scale into a plan people could understand and deliver.",
+      "I grew from volunteer to Deputy Head, Secretary, and then Steering Committee member. Along the way, I helped a 350-person student team deliver more than 50 events while keeping budgets, vendors, approvals, and on-ground work connected.",
     facts: [
-      { value: "₹16M", label: "operating budget" },
+      { value: "350", label: "students in the team network" },
       { value: "14", label: "departments" },
-      { value: "50+", label: "events" },
+      { value: "₹16M", label: "operating budget" },
     ],
     sections: [
       {
-        title: "Planning with accountability",
-        text: "As Secretary for Paradox 2025 and a Steering Committee member for Paradox 2026, I worked across financial audits, resource planning, logistics, and on-ground setup.",
+        title: "Responsibility that grew over time",
+        text: "As Deputy Head of Facilities, Requirements, and Budgeting, I led a 20-person team through vendor coordination and five days of festival logistics. As Secretary, the scope grew to 14 departments, financial oversight, resource planning, and shared deadlines.",
       },
       {
-        title: "Making a big team work",
-        text: "I coordinated student teams with different priorities and deadlines. Clear ownership, regular follow-ups, and simple communication kept work moving across 14 departments.",
+        title: "Systems that made coordination easier",
+        text: "I oversaw the rollout of a student app for announcements and QR check-ins, the customization of an open-source team-management tool, and a new payment gateway. Together, they made approvals, tracking, and collections easier to follow.",
       },
       {
-        title: "Extending the work beyond campus",
-        text: "For the School to School initiative, I helped plan the volunteer effort and logistics that collected and distributed five tons of academic materials to underserved communities.",
+        title: "A more direct route to schools",
+        text: "For School to School, I helped replace centralized storage with direct delivery to schools and orphanages. That change made it easier to coordinate volunteers and get five tons of academic material to the communities it was meant for.",
       },
     ],
   },

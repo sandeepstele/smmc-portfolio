@@ -150,38 +150,34 @@ function Hero() {
 
         <div className="hero-visual">
           <div className="hero-grid" aria-hidden="true" />
-          <svg
-            className="hero-line"
-            viewBox="0 0 540 420"
-            fill="none"
-            aria-hidden="true"
-          >
-            <path d="M18 354C110 330 129 273 214 282C300 291 327 166 395 178C464 189 456 83 523 54" />
-            <circle cx="214" cy="282" r="8" />
-            <circle cx="395" cy="178" r="8" />
-            <circle cx="523" cy="54" r="8" />
-          </svg>
-          <figure className="hero-photo">
-            <img
-              src={assetUrl("assets/paradox-hero.jpg")}
-              alt="Sandeep Satheesh holding his certificate at the Paradox 2026 closing ceremony"
-              width="1000"
-              height="1250"
-            />
-            <figcaption>
-              <span>Paradox 2026</span>
-              Steering Committee
-            </figcaption>
-          </figure>
-          <div className="hero-card" aria-label="Focus areas">
-            <span>Focus</span>
-            <strong>Education + Data + Operations</strong>
-            <div className="mini-bars" aria-hidden="true">
+          <div className="evidence-panel">
+            <div className="evidence-heading">
+              <span>How I work</span>
+              <strong>Three strengths, working together</strong>
+            </div>
+            <div className="evidence-rows">
+              <div>
+                <BookOpen size={21} aria-hidden="true" />
+                <p><strong>Education</strong><span>Explain ideas clearly</span></p>
+                <b>01</b>
+              </div>
+              <div>
+                <BarChart3 size={21} aria-hidden="true" />
+                <p><strong>Data</strong><span>Find the useful signal</span></p>
+                <b>02</b>
+              </div>
+              <div>
+                <Workflow size={21} aria-hidden="true" />
+                <p><strong>Operations</strong><span>Keep the work moving</span></p>
+                <b>03</b>
+              </div>
+            </div>
+            <div className="evidence-chart" aria-hidden="true">
+              <span>Listen</span>
               <i />
+              <span>Measure</span>
               <i />
-              <i />
-              <i />
-              <i />
+              <span>Improve</span>
             </div>
           </div>
         </div>
@@ -335,63 +331,69 @@ function Experience() {
           text="Listen carefully, use the information available, and make the next step easier for everyone involved."
         />
 
-        <article className="case-study case-study-bdm" aria-labelledby="bdm-title">
-          <div className="case-media bdm-gallery">
-            <figure className="gallery-wide">
-              <img
-                src={assetUrl("assets/bdm-team-wide.jpg")}
-                alt="Sandeep with members of the Business Data Management course team"
-                width="1200"
-                height="900"
-                loading="lazy"
-              />
-              <figcaption>Business Data Management teaching team</figcaption>
-            </figure>
-            <figure className="gallery-small">
-              <img
-                src={assetUrl("assets/bdm-team-portrait.jpg")}
-                alt="Sandeep and colleagues from the Business Data Management course"
-                width="640"
-                height="642"
-                loading="lazy"
-              />
-              <figcaption>IIT Madras</figcaption>
-            </figure>
-            <div className="gallery-stat" aria-label="Teaching experience duration">
-              <strong>21</strong>
-              <span>months of course support</span>
+        <div className="case-study-grid">
+          <article className="case-study" aria-labelledby="bdm-title">
+            <div id="bdm-title">
+              <CaseStudyText study={bdm} />
             </div>
-          </div>
-          <div id="bdm-title">
-            <CaseStudyText study={bdm} />
-          </div>
-        </article>
+          </article>
+          <article className="case-study" aria-labelledby="paradox-title">
+            <div id="paradox-title">
+              <CaseStudyText study={paradox} />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  );
+}
 
-        <article className="case-study case-study-paradox" aria-labelledby="paradox-title">
-          <div id="paradox-title">
-            <CaseStudyText study={paradox} />
-          </div>
-          <div className="case-media paradox-media">
-            <figure>
+function PhotoGallery() {
+  const photos = [
+    {
+      src: "assets/bdm-team-wide.jpg",
+      alt: "Sandeep with members of the Business Data Management course team",
+      caption: "Business Data Management team",
+      width: 1200,
+      height: 900,
+    },
+    {
+      src: "assets/bdm-team-portrait.jpg",
+      alt: "Sandeep and colleagues from the Business Data Management course",
+      caption: "Course colleagues at IIT Madras",
+      width: 640,
+      height: 642,
+    },
+    {
+      src: "assets/paradox-stage.jpg",
+      alt: "Paradox 2026 steering committee members receiving certificates at the closing ceremony",
+      caption: "Paradox 2026 closing ceremony",
+      width: 2200,
+      height: 1466,
+    },
+  ];
+
+  return (
+    <section className="photo-section" aria-labelledby="photo-title">
+      <div className="shell photo-section-inner">
+        <div className="photo-heading">
+          <p className="eyebrow"><span aria-hidden="true" />Along the way</p>
+          <h2 id="photo-title">The people behind the work</h2>
+        </div>
+        <div className="photo-grid">
+          {photos.map((photo) => (
+            <figure key={photo.src}>
               <img
-                src={assetUrl("assets/paradox-stage.jpg")}
-                alt="Paradox 2026 steering committee members receiving certificates at the closing ceremony"
-                width="2200"
-                height="1466"
+                src={assetUrl(photo.src)}
+                alt={photo.alt}
+                width={photo.width}
+                height={photo.height}
                 loading="lazy"
               />
-              <figcaption>
-                <span>Paradox 2026 closing ceremony</span>
-                <span>IIT Madras</span>
-              </figcaption>
+              <figcaption>{photo.caption}</figcaption>
             </figure>
-            <div className="impact-card">
-              <span>Community initiative</span>
-              <strong>5 tons</strong>
-              <p>of academic materials collected and distributed</p>
-            </div>
-          </div>
-        </article>
+          ))}
+        </div>
       </div>
     </section>
   );
@@ -544,6 +546,7 @@ export default function App() {
         <About />
         <RoleFit />
         <Experience />
+        <PhotoGallery />
         <Competencies />
         <Contact />
       </main>
