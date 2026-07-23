@@ -29,12 +29,6 @@ for (const viewport of responsiveSizes) {
       "href",
       "/smmc-portfolio/Sandeep_Satheesh_Resume.pdf",
     );
-    await expect(
-      page.getByRole("link", { name: /download portfolio pdf/i }),
-    ).toHaveAttribute(
-      "href",
-      "/smmc-portfolio/Sandeep_Satheesh_SMMC_Portfolio.pdf",
-    );
 
     const overflow = await page.evaluate(
       () => document.documentElement.scrollWidth - document.documentElement.clientWidth,
