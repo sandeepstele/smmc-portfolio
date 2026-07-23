@@ -139,6 +139,14 @@ function Hero() {
               <Download size={18} aria-hidden="true" />
               Download resume
             </a>
+            <a
+              className="button button-secondary"
+              href={`${BASE_PATH}Sandeep_Satheesh_SMMC_Portfolio.pdf`}
+              download
+            >
+              <Download size={18} aria-hidden="true" />
+              Download portfolio PDF
+            </a>
           </div>
           <div className="hero-note">
             <span className="status-dot" aria-hidden="true" />

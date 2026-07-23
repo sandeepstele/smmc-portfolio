@@ -1455,3 +1455,309 @@ select {
     transition-duration: 0.01ms !important;
   }
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 11mm;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html,
+  body {
+    overflow: visible;
+    background: white;
+  }
+
+  body {
+    font-size: 10pt;
+  }
+
+  body::before,
+  .skip-link,
+  .site-header,
+  .hero-grid,
+  .hero-actions,
+  .site-footer {
+    display: none !important;
+  }
+
+  .shell {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 0;
+    grid-template-columns: minmax(0, 1.15fr) minmax(66mm, 0.85fr);
+    gap: 10mm;
+    padding-block: 5mm 8mm;
+  }
+
+  .hero h1 {
+    font-size: 46pt;
+  }
+
+  .hero-lede {
+    margin-top: 6mm;
+    font-size: 13pt;
+  }
+
+  .hero-note {
+    margin-top: 6mm;
+    padding-top: 5mm;
+    font-size: 9pt;
+  }
+
+  .hero-visual {
+    min-height: 0;
+  }
+
+  .evidence-panel {
+    width: 100%;
+    padding: 5mm;
+    border-radius: 4mm;
+    box-shadow: none;
+  }
+
+  .evidence-heading {
+    padding-bottom: 4mm;
+  }
+
+  .evidence-heading strong {
+    font-size: 18pt;
+  }
+
+  .evidence-rows > div {
+    padding: 3.5mm 0;
+  }
+
+  .metrics-section {
+    margin-inline: -11mm;
+    padding: 6mm 11mm 8mm;
+    break-after: page;
+  }
+
+  .metrics-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .metric,
+  .metric:nth-child(n + 4) {
+    padding-top: 5mm;
+  }
+
+  .metric:nth-child(4) {
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .metric dt strong {
+    font-size: 23pt;
+  }
+
+  .section {
+    padding-block: 9mm;
+  }
+
+  .section-heading h2,
+  .contact-section h2 {
+    font-size: 34pt;
+  }
+
+  .section-intro {
+    margin-top: 4mm;
+    font-size: 11pt;
+  }
+
+  .about-section {
+    margin-inline: -11mm;
+    padding: 12mm 11mm;
+    break-after: page;
+  }
+
+  .about-grid {
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1fr);
+    gap: 12mm;
+  }
+
+  .about-copy {
+    padding-top: 5mm;
+  }
+
+  .about-copy > p {
+    margin-bottom: 4mm;
+    font-size: 10pt;
+  }
+
+  .about-copy .lead-paragraph {
+    font-size: 17pt;
+  }
+
+  .role-section {
+    min-height: 255mm;
+    margin-inline: -11mm;
+    padding: 15mm 11mm;
+    break-after: page;
+  }
+
+  .role-path {
+    grid-template-columns: repeat(5, 1fr);
+    gap: 4mm;
+    margin-top: 14mm;
+  }
+
+  .role-path::before {
+    display: block;
+  }
+
+  .role-step {
+    display: block;
+    padding-inline: 2mm;
+  }
+
+  .role-node {
+    width: 11mm;
+    height: 11mm;
+    margin-bottom: 6mm;
+  }
+
+  .role-number,
+  .role-step h3,
+  .role-step p {
+    grid-column: auto;
+  }
+
+  .role-step h3 {
+    font-size: 15pt;
+  }
+
+  .role-step p {
+    font-size: 8.5pt;
+  }
+
+  .experience-section {
+    padding-top: 10mm;
+  }
+
+  .case-study-grid {
+    display: block;
+    margin-top: 9mm;
+  }
+
+  .case-study {
+    margin-bottom: 10mm;
+    padding: 8mm;
+    break-inside: avoid;
+  }
+
+  .case-copy h3 {
+    font-size: 27pt;
+  }
+
+  .case-intro {
+    font-size: 10.5pt;
+  }
+
+  .case-details {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5mm;
+  }
+
+  .case-details p {
+    font-size: 8.5pt;
+  }
+
+  .photo-section {
+    margin-inline: -11mm;
+    padding: 9mm 11mm;
+    break-before: page;
+  }
+
+  .photo-grid img {
+    height: 44mm;
+  }
+
+  .skills-section {
+    padding-block: 12mm;
+  }
+
+  .competency-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4mm;
+    margin-top: 9mm;
+  }
+
+  .competency-card {
+    min-height: 0;
+    padding: 5mm;
+    break-inside: avoid;
+  }
+
+  .competency-card h3 {
+    margin-top: 5mm;
+    font-size: 20pt;
+  }
+
+  .competency-card > p,
+  .competency-card li {
+    font-size: 8.5pt;
+  }
+
+  .additional-work {
+    grid-template-columns: auto 1fr auto;
+    gap: 4mm;
+    margin-top: 4mm;
+    padding: 4mm;
+    break-inside: avoid;
+  }
+
+  .additional-icon {
+    width: 12mm;
+    height: 12mm;
+  }
+
+  .additional-work h3 {
+    font-size: 16pt;
+  }
+
+  .additional-work p:not(.mini-eyebrow) {
+    margin-top: 1mm;
+    font-size: 8pt;
+  }
+
+  .tool-tags {
+    gap: 1mm;
+    margin-top: 2mm;
+  }
+
+  .tool-tags span {
+    padding: 1mm 2mm;
+    font-size: 7pt;
+  }
+
+  .additional-work .text-link {
+    grid-column: auto;
+    font-size: 8pt;
+  }
+
+  .contact-section {
+    display: flex;
+    min-height: 260mm;
+    align-items: center;
+    margin: 0 -11mm -11mm;
+    padding: 18mm 11mm;
+    break-before: page;
+  }
+
+  .contact-copy > p {
+    font-size: 11pt;
+  }
+}

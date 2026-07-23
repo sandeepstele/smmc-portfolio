@@ -30,12 +30,19 @@ describe("SMMC portfolio", () => {
     render(<App />);
 
     const resume = screen.getByRole("link", { name: /download resume/i });
+    const brochure = screen.getByRole("link", {
+      name: /download portfolio pdf/i,
+    });
     const work = screen.getByRole("link", { name: /view my work/i });
 
     expect(resume.getAttribute("href")).toBe(
       "/smmc-portfolio/Sandeep_Satheesh_Resume.pdf",
     );
     expect(resume.hasAttribute("download")).toBe(true);
+    expect(brochure.getAttribute("href")).toBe(
+      "/smmc-portfolio/Sandeep_Satheesh_SMMC_Portfolio.pdf",
+    );
+    expect(brochure.hasAttribute("download")).toBe(true);
     expect(work.getAttribute("href")).toBe("#experience");
   });
 
