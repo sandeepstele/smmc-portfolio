@@ -8,18 +8,21 @@ describe("SMMC portfolio", () => {
 
     expect(
       screen.getByRole("heading", {
-        name: /Data Analyst & Educational Leader/i,
+        name: /Student Education & Data Support/i,
       }),
     ).toBeTruthy();
     expect(
       screen.getByRole("heading", {
-        name: /Experience that maps to student support/i,
+        name: /How my experience fits the SMMC role/i,
       }),
     ).toBeTruthy();
     expect(
       screen.getByRole("heading", {
-        name: /Two settings\. The same working habits\./i,
+        name: /Evidence for the work SMMC needs/i,
       }),
+    ).toBeTruthy();
+    expect(
+      screen.getByRole("heading", { name: /^Media$/i }),
     ).toBeTruthy();
   });
 

@@ -115,15 +115,16 @@ function Hero() {
     <>
       <section className="hero shell" id="top" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="hero-kicker">Incoming MCS student at UIUC · 2026</p>
+          <p className="hero-kicker">SMMC Support Specialist portfolio · UIUC</p>
           <h1 id="hero-title">
-            Data Analyst
+            Student Education
             {" "}
-            <span>&amp; Educational Leader</span>
+            <span>&amp; Data Support</span>
           </h1>
           <p className="hero-lede">
-            I’m Sandeep. I use data, clear systems, and hands-on mentorship to
-            help students learn and programs run well.
+            I’m Sandeep, an incoming MCS student at UIUC. I bring experience
+            teaching large student groups, improving educational workflows,
+            analyzing data, and coordinating student teams.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#experience">
@@ -142,8 +143,8 @@ function Hero() {
           <div className="hero-note">
             <span className="status-dot" aria-hidden="true" />
             <p>
-              Looking for campus work where education, data, and dependable
-              operations come together.
+              Prepared for the Student Money Management Center’s mix of
+              financial education, program analysis, and dependable operations.
             </p>
           </div>
         </div>
@@ -168,7 +169,7 @@ function Hero() {
               </div>
               <div>
                 <Workflow size={21} aria-hidden="true" />
-                <p><strong>Operations</strong><span>Keep the work moving</span></p>
+                <p><strong>Program support</strong><span>Keep the work moving</span></p>
                 <b>03</b>
               </div>
             </div>
@@ -259,8 +260,8 @@ function RoleFit() {
       <div className="shell">
         <SectionHeading
           eyebrow="What I bring"
-          title="Experience that maps to student support"
-          text="The setting may change, but the work is familiar: explain, organize, measure, improve, and help a team deliver."
+          title="How my experience fits the SMMC role"
+          text="Each part of the position connects to work I have already done in student education, course administration, analysis, or team leadership."
           light
         />
 
@@ -326,9 +327,9 @@ function Experience() {
     <section className="section experience-section" id="experience">
       <div className="shell">
         <SectionHeading
-          eyebrow="Selected experience"
-          title="Two settings. The same working habits."
-          text="Listen carefully, use the information available, and make the next step easier for everyone involved."
+          eyebrow="Relevant experience"
+          title="Evidence for the work SMMC needs"
+          text="These two roles show how I teach, improve educational processes, manage details, and support people at scale."
         />
 
         <div className="case-study-grid">
@@ -353,45 +354,37 @@ function PhotoGallery() {
     {
       src: "assets/bdm-team-wide.jpg",
       alt: "Sandeep with members of the Business Data Management course team",
-      caption: "Business Data Management team",
       width: 1200,
       height: 900,
     },
     {
       src: "assets/bdm-team-portrait.jpg",
       alt: "Sandeep and colleagues from the Business Data Management course",
-      caption: "Course colleagues at IIT Madras",
       width: 640,
       height: 642,
     },
     {
       src: "assets/paradox-stage.jpg",
       alt: "Paradox 2026 steering committee members receiving certificates at the closing ceremony",
-      caption: "Paradox 2026 closing ceremony",
       width: 2200,
       height: 1466,
     },
   ];
 
   return (
-    <section className="photo-section" aria-labelledby="photo-title">
+    <section className="photo-section" id="media" aria-labelledby="media-title">
       <div className="shell photo-section-inner">
-        <div className="photo-heading">
-          <p className="eyebrow"><span aria-hidden="true" />Along the way</p>
-          <h2 id="photo-title">The people behind the work</h2>
-        </div>
+        <h2 id="media-title">Media</h2>
         <div className="photo-grid">
           {photos.map((photo) => (
-            <figure key={photo.src}>
-              <img
-                src={assetUrl(photo.src)}
-                alt={photo.alt}
-                width={photo.width}
-                height={photo.height}
-                loading="lazy"
-              />
-              <figcaption>{photo.caption}</figcaption>
-            </figure>
+            <img
+              key={photo.src}
+              src={assetUrl(photo.src)}
+              alt={photo.alt}
+              width={photo.width}
+              height={photo.height}
+              loading="lazy"
+            />
           ))}
         </div>
       </div>
@@ -404,9 +397,9 @@ function Competencies() {
     <section className="section skills-section" id="skills">
       <div className="shell">
         <SectionHeading
-          eyebrow="Core competencies"
-          title="The skills I would bring on day one"
-          text="A practical mix of student-facing communication, careful analysis, and behind-the-scenes coordination."
+          eyebrow="SMMC role fit"
+          title="The skills I would bring to the center"
+          text="A focused mix of student education, communication analysis, digital program support, and team coordination."
         />
         <div className="competency-grid">
           {competencies.map((group) => (
@@ -431,12 +424,13 @@ function Competencies() {
             <BarChart3 size={26} />
           </div>
           <div>
-            <p className="mini-eyebrow">Additional data work</p>
-            <h3>Karnataka State Police Datathon winner</h3>
+            <p className="mini-eyebrow">Evidence of applied analysis</p>
+            <h3>Turning a large dataset into useful findings</h3>
             <p>
-              Built a geospatial and time-series analysis tool to examine crime
-              patterns across Karnataka. The project was selected from more than
-              30,000 initial submissions in the 2024 datathon.
+              For the Karnataka State Police Datathon, I helped build a
+              geospatial and time-series analysis tool that turned complex data
+              into findings people could use. It is the same practical approach
+              I would bring to SMMC’s communication and education data.
             </p>
             <div className="tool-tags" aria-label="Project tools">
               <span>Python</span>
@@ -474,10 +468,10 @@ function Contact() {
         </div>
         <div className="contact-copy">
           <p>
-            I’m looking for campus work where I can help create useful
-            educational material, study what is reaching students, and keep
-            important programs moving. If that sounds useful to your team, I’d
-            be glad to talk.
+            I’m applying specifically for the SMMC Support Specialist position.
+            I would be glad to help the center create useful financial education,
+            understand what is reaching students, support the Digital Badges
+            Program, and guide student interns.
           </p>
           <div className="contact-links">
             <a href="mailto:ss348@illinois.edu">

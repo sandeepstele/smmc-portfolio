@@ -20,7 +20,7 @@ for (const viewport of responsiveSizes) {
     expect(response?.ok()).toBeTruthy();
     await expect(
       page.getByRole("heading", {
-        name: /Data Analyst & Educational Leader/i,
+        name: /Student Education & Data Support/i,
       }),
     ).toBeVisible();
     await expect(

@@ -2,6 +2,7 @@ export const navigation = [
   { label: "About", href: "#about" },
   { label: "Role fit", href: "#role-fit" },
   { label: "Experience", href: "#experience" },
+  { label: "Media", href: "#media" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
@@ -18,28 +19,28 @@ export const metrics = [
 export const roleFit = [
   {
     number: "01",
-    title: "Educate students",
+    title: "Financial education",
     text: "Ran live sessions and answered Discourse questions for a course serving more than 1,500 students per term.",
   },
   {
     number: "02",
-    title: "Build useful materials",
-    text: "Helped prepare assignments, quizzes, exams, and new question formats based on where students needed more practice.",
+    title: "Educational materials",
+    text: "Prepared supporting resources, assessments, and new question formats around the needs of a large, varied student group.",
   },
   {
     number: "03",
-    title: "Read the data",
-    text: "Used assessment and submission patterns to find unclear instructions, recurring errors, and gaps in course processes.",
+    title: "Program analysis",
+    text: "Used assessment and submission patterns to find unclear communication, recurring errors, and gaps in educational processes.",
   },
   {
     number: "04",
-    title: "Improve digital workflows",
-    text: "Turned slow, sequential submission checks into a parallel workflow—experience that transfers to LMS and digital badge operations.",
+    title: "Digital badge support",
+    text: "Improved online course workflows and administration—transferable experience for learning systems and digital badge operations.",
   },
   {
     number: "05",
-    title: "Guide a team",
-    text: "Coordinated a 350-person student team across 14 departments and turned a large plan into clear day-to-day work.",
+    title: "Intern supervision",
+    text: "Mentored students and coordinated a 350-person student team, setting clear responsibilities and following work through.",
   },
 ];
 
@@ -103,35 +104,35 @@ export const caseStudies = [
 export const competencies = [
   {
     number: "01",
-    title: "Educational support",
-    description: "Making complex information easier to use.",
+    title: "Student education",
+    description: "Making unfamiliar information clear and approachable.",
     skills: [
-      "Virtual and online education",
-      "Curriculum support",
-      "Digital learning workflows",
+      "Live and online education",
+      "Educational material development",
+      "Support for diverse learners",
       "Student mentorship",
     ],
   },
   {
     number: "02",
-    title: "Data and analysis",
-    description: "Turning activity into evidence for better decisions.",
+    title: "Communication analysis",
+    description: "Using program activity to improve how students are reached.",
     skills: [
-      "Performance tracking",
-      "Program evaluation",
+      "Education effort analysis",
+      "Communication review",
       "Analysis and reporting",
-      "Workflow automation",
+      "Clear findings for decisions",
     ],
   },
   {
     number: "03",
-    title: "Leadership and operations",
-    description: "Keeping people, budgets, and delivery aligned.",
+    title: "Program operations",
+    description: "Keeping people, systems, and delivery aligned.",
     skills: [
-      "Budget management",
-      "Project planning",
-      "Clear communications",
-      "Team coordination",
+      "Digital learning workflows",
+      "Budget accountability",
+      "Intern and team supervision",
+      "Project coordination",
     ],
   },
 ];
