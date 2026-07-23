@@ -510,11 +510,6 @@ function Footer() {
       <div className="shell footer-inner">
         <div>
           <span className="brand-mark footer-mark" aria-hidden="true">SS</span>
-          <p>
-            Designed around real work,
-            <br />
-            real numbers, and student success.
-          </p>
         </div>
         <div className="footer-meta">
           <p>© {new Date().getFullYear()} Sandeep Satheesh</p>
